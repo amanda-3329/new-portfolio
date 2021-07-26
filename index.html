@@ -11,8 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
-    <!-- CSS -->
+    <!-- LIGHT MODE CSS -->
     <link rel="stylesheet" type="text/css" href="default.css">
+    <!-- THEME CSS -->
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
     <title>Amanda Lowry</title>
 </head>
 
@@ -41,10 +43,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Your Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="dark-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">Theme options will be saved for<br> your next visit</p>
@@ -57,7 +59,8 @@
                             <div id="corner-tl" class="corner"></div>
                             <div id="corner-tr" class="corner"></div>
                             <h3>About Me</h3>
-                            <p>I was a corporate analyst in a past life, now I enjoy coding and solving problems by creating
+                            <p>I was a corporate analyst in a past life, now I enjoy coding and solving problems by
+                                creating
                                 meaningful solutions!</p>
                             <div id="corner-br" class="corner"></div>
                             <div id="corner-bl" class="corner"></div>
@@ -74,37 +77,51 @@
 
             <div class="about-wrapper">
                 <div class="about-me">
-                <h4>More About Me</h4>
-                <p>I am an enthusiastic collaborator who is detail oriented. I work as an integral part of a team with the goal to bring meaningful impact to the organization. Whether it is streamlining procedures and protocols, or creative problem solving, I enjoy creating and maintaining powerful content to keep your business moving forward.</p>
+                    <h4>More About Me</h4>
+                    <p>I am an enthusiastic collaborator who is detail oriented. I work as an integral part of a team
+                        with the goal to bring meaningful impact to the organization. Whether it is streamlining
+                        procedures and protocols, or creative problem solving, I enjoy creating and maintaining powerful
+                        content to keep your business moving forward.</p>
 
-                <p>If you'd like to learn more about my roles, career, or more, please contact me.</p>
-                </div>
-                <hr>
+                    <p>If you'd like to learn more about my roles, career, or more, please contact me.</p>
 
-                <h4>Software Languages</h4>
-                <p>Full stack developer with primary focus on Python + Django: <a target="_blank" href="amanda_lowry_resume.pdf">Download Resume</a></p>
+                    <hr>
 
-                <div id="skills">
-                
+                    <h4>Software Languages</h4>
+
+                    <p>Full stack developer with primary focus on Python + Django: <a target="_blank"
+                            href="amanda_lowry_resume.pdf">Download Resume</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>JavaScript</li>
+                            <li>Express</li>
+                            <li>PostgresQL</li>
+                            <li>jQuery</li>
+                            <li>React</li>
+                        </ul>
+                        <ul>
+                            <li>CLI/Terminal</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Heroku</li>
+                            <li>GitHub</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+
+                        </ul>
+
+                    </div>
                 </div>
 
                 <div class="social-links">
-                    <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>JavaScript</li>
-                        <li>Express</li>
-                        <li>PostgresQL</li>
-                        <li>MongoDB</li>
-                        <li>Mongoose</li>
-                        <li>jQuery</li>
-                    <ul>
-                        <li>React</li>
-                        <li>Node</li>
-                        <li>CSS</li>
-                        <li>HTML</li>
-                    
-                    </ul>
+                    <h3>Find Me on Linked In + Git Hub</h3>
+                    <a id="linkedin" href="https://www.linkedin.com/in/amandaslowry"><img target="_blank"
+                            src="images/linkedin.png" alt="LinkedIn logo"></a>
+                    <a id="github" target="blank" href="https://github.com/amanda-3329"><img target="_blank"
+                            src="images/GitHub-Mark-120px-plus.png" alt="Github logo"></a>
 
 
                     </ul>
@@ -115,15 +132,76 @@
 
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;"> Some of my Past Projects</h3>
+            <div class="post-wrapper">
+
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/huluclone.png" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Hulu Design Clone</h6>
+                            <p class="post-intro">Technologies used: CSS, HTML, and JavaScript
+                                <br>
+                                <br>
+                            </p>
+                            <a href="https://github.com/amanda-3329/hulu-clone-css-html" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/HoneyBee-Img1.png" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Honeybee Bakery</h6>
+
+                            <p class="post-intro">Technologies used: Python Django, JavaScript, Materialize CSS, Google
+                                Maps API, HTML.</p>
+                            <a href="https://github.com/amanda-3329/Python-Bakery-Project" target="blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/melty-homepage.png" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Melty</h6>
+
+                            <p class="post-intro">Technologies used: Express, Node, Embedded JavaScript, Mongoose,
+                                MongoDB, CSS, HTML.</p>
+                            <a href="https://github.com/amanda-3329/melty" target="blank">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;"> Get in Touch</h3>
+            <form id="contact-form">
+                <label>Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label>Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label>Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label>Message</label>
+                <textarea name="message" id="" cols="30" rows="10" class="input-field"></textarea>
+
+
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 
