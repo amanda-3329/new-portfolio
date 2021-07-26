@@ -33,6 +33,6 @@ function setTheme(mode) {
     if (mode == 'purple') {
         document.getElementById('theme-style').href = 'purple.css'
     }
-
+    // Saves chosen theme to local storage ties with line 1 above;
     localStorage.setItem('theme', mode)
 }
